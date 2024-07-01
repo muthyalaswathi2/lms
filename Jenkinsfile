@@ -12,6 +12,18 @@ pipeline {
             }
         }
 
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+                sh 'free'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+                sh 'sudo docker image ls'
 
-    }
+		}
+        }
+   }
 }
