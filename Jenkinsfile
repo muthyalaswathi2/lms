@@ -8,7 +8,7 @@ pipeline {
                 sh 'cat /etc/os-release'
             }
         }
-<<<<<<< HEAD
+
         stage('Test') {
             steps {
                 echo 'Testing..'
@@ -22,7 +22,5 @@ pipeline {
 
 		}
         }
-
-
    }
 }
